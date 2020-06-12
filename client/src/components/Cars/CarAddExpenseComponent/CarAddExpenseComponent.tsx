@@ -89,6 +89,7 @@ export class CarAddExpenseComponent extends React.Component {
     }
     return (
       <Container>
+        <h1>Add expense</h1>
         <Alert
           variant="danger"
           className={this.state.errorMessage ? "" : "d-none"}

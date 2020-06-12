@@ -24,7 +24,7 @@ export class AuthController {
   ): Promise<ApiResponse> {
     const user = await this.userService.findByEmail(loginUserDto.email);
     const apiResponse = new ApiResponse('success');
-    console.log(user);
+    // console.log(user);
     if (!user) {
       apiResponse.status = 'error';
       apiResponse.statusCode = -3001;

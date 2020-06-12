@@ -19,7 +19,7 @@ export class ClientsController {
 
   // create new client
   @Post()
-  createCar(@Body() createClientDto: CreateClientDto) {
+  createClient(@Body() createClientDto: CreateClientDto) {
     return this.clientsService.createClient(createClientDto);
   }
 }
